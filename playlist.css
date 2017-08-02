@@ -1,0 +1,239 @@
+body{
+    width: 98%;
+    background-color: rgba(228, 65, 65, 0.38);
+}
+.header{
+    position: fixed;
+    width: 98%;
+    /* background: #9E9E9E; */
+    color: black;
+    z-index: 100;
+    opacity: 0.9;
+    background-color: rgba(228, 65, 65, 0.93);
+}
+.h1_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f5be98; */
+    
+}
+.container_header_add_search{
+    display: flex;
+    /* width: 80%; */
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    margin-top: 2%;
+}
+.header_add_search{
+/*  font-size: x-large;
+    background: #fd7272;
+    border: navajowhite; */
+    font-size: x-large;
+    background: black;
+    border: navajowhite;
+    color: white;
+}
+.header_add_search:hover{
+/*     background: white; */
+/*  border: 1px solid blue; */
+    font-weight: 600;
+    opacity: 1;
+}
+.main{
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#popup_container{
+    display: flex;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background-color: black;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.70;
+    z-index: 100;
+    width: 100%;
+}
+#popup_content{
+    background-color: white;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 40%;
+    display: flex;
+    width: 34%;
+}
+.titlePopup{
+    margin-top: auto;
+    border: 1px solid red;
+    color: black;
+    display: flex;
+}
+.container_name_and_url{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+.input_in_popup{
+    width: 80%;
+    margin-top: 8%;
+}
+.title{
+    font-size: -webkit-xxx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid;
+    font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif; 
+}
+.popupNew_button_next ,.popupNew_button_cancel{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+.image_list_playlist{
+        width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid rgba(228, 65, 65, 0.93);
+    opacity: 0.85;
+    padding: 10%;
+    margin-top: 7%;
+}
+
+.image_list_playlist:hover{ 
+    width: 152px;
+    height: 150px;
+    opacity: 1;
+
+}
+.name_list_playlist{
+    margin-top: 2%;
+}
+.container_playlist_work_now{
+    width: 47%;
+    /* border: 1px solid black; */
+    margin-top: 6%;
+    background-color: rgba(228, 65, 65, 0.93);
+    border-bottom-right-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-top-left-radius: 110px;
+    position: relative;
+    padding: 1%;
+    display: flex;
+}
+/* .image_play_now{
+    border-radius: 50%;
+    display: flex;
+} */
+.image_play_now{
+    width: 46%;
+    border-radius: 50%;
+    /* position: absolute; */
+    top: 33%;
+    left: 14%;
+}
+.container_image_play_now{
+    height: 20rem;
+    background-color: black;
+    width: 34%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 2%; */
+    /* margin-top: 0.2%; */
+    margin: 2%;
+}
+.container_get_all_playlist{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+ /*    flex-wrap: wrap;  */
+    overflow-x: auto;
+}
+.content_playlist_get{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+.container_playlist_songs_from_get_play_now{
+    margin-top: 2%;
+    position: relative;
+    width: 80%;
+}
+.list_ol_songs{
+    font-size: x-large;
+}
+.img_editor_playlist_work_now{
+    position: absolute;
+    right: 15%;
+    top: 29%;
+    display: flex;
+    flex-direction: column;
+}
+.img_editor_playlist_work_now img{
+    opacity: 0.6;
+    width: 41%;
+    margin: 2%;
+    
+}
+.img_editor_playlist_work_now img:hover{
+    opacity: 1;
+    width: 42%;
+}
+.opacity_image_one{
+    opacity: 1;
+    width: 41%;
+    margin: 2%;
+}
+.song_edit_low_width{
+
+}
+#delete_song{
+    width: 8%;
+}
+::-webkit-scrollbar{
+
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(228, 65, 65, 0.93);
+    border-radius: 9px;
+    width: 9px;
+}
+.big_imag_in_play_now{
+    width: 16rem;
+    height: 16rem;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+ @-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(360deg); 
+        }
+    }
